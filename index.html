@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Latin Translator</title>
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+<!-- test -->
+<body>
+    <div class="container">
+        <div class="container-main">
+            <h1>Pig Latin Translator</h1>
+            <a href="https://github.com/"><img src="./github-logo.png" alt="github"></a>
+            <a href="#"><img src="./pig-face.png" alt="github" id="pig-face"></a>
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Pig_Latin">More info about Pig Latin</a>
+            <div class="input-elements">
+                <form>
+                    <p>Note: <br>
+                        The translator can only translate a single word.
+                    </p>
+                    <label for="name">Word to translate</label>
+                    <input type="text" name="name" id="string-input">
+                    <button onclick="translateWord()" type="button">Submit</button>
+                </form>
+                <p id="word-translate-result"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./src/scripts/translator.js"></script>
+    <script src="./src/scripts/render.js"></script>
+</body>
+
+</html>
